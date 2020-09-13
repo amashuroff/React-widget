@@ -13,12 +13,12 @@ const Search = () => {
 
     return () => {
       clearTimeout(timeoutId);
-    }
+    };
   }, [term]);
 
   useEffect(() => {
     if (!debouncedTerm) {
-      setDebouncedTerm('wikipedia');
+      setDebouncedTerm("wikipedia");
     } else {
       const searchWiki = async () => {
         const { data } = await axios.get("https://en.wikipedia.org/w/api.php", {

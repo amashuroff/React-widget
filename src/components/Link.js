@@ -3,7 +3,7 @@ import React from "react";
 const Link = ({ href, children, className }) => {
   const onClick = (event) => {
     if (event.metaKey || event.ctrlKey) {
-        return;
+      return;
     }
     event.preventDefault();
 
